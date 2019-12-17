@@ -16,8 +16,8 @@ export default class ProductList extends Component {
             
             <React.Fragment>
                 <div className = 'page-container'>
-                    <div className = 'container'>
-                        <div className='row'>
+                    <div className = 'pl-container'>
+                        <div className='pl-row'>
                             <ProductConsumer>
                                 {value=>{
                                     return value.products.map( product => {
