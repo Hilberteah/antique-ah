@@ -41,8 +41,12 @@ html {
     
 
 }
+.pl-container {
+    padding-top: 20px;
 
+}
 .pl-row {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
 }
