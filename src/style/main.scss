@@ -1,0 +1,51 @@
+@import "./title-styles.scss";
+@import "./variables.scss";
+@import "./header.scss";
+@import "./footer.scss";
+@import "./nav.scss";
+@import "./contact-styles.scss";
+@import "./cart-styles.scss";
+@import "./shop-styles.scss";
+@import "./door.scss";
+@import "./keyframes.scss";
+@import "./product-styles.scss";
+@import "./detail-styles.scss";
+@import "./modal-styles.scss";
+
+html {
+    font-size: 62.5%; // 1rem is 10px
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    font-family: 'montserrat';
+}
+
+body {
+    overflow-x: hidden;
+    font-weight: normal;
+    font-family: 'Bebas Neue', cursive;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    -webkit-tap-highlight-color: transparent;
+    background-color: $yellowtan;
+}
+
+.app {
+
+    display: grid;
+    justify-items: center;
+}
+
+.page-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    
+
+}

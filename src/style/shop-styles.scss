@@ -1,0 +1,32 @@
+.address3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    flex-direction: column;
+
+    .map-wrapper{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        .map {
+            width: 99.1%;
+            height: 400px;
+            border: 5px solid $rust;
+            border-radius: 10px;
+        }
+    }
+
+    h1{
+        font-size: 70px;
+        font-family: 'Bebas Neue', cursive;
+        color: $rust;
+        letter-spacing: 2px;
+    }
+}
+
+.page-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;    
+
+}

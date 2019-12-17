@@ -1,0 +1,9 @@
+.footer {
+    background-color: $rust;
+    display: flex;
+    justify-content: center;
+    color: $bluegrey;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

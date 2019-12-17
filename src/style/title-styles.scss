@@ -1,0 +1,16 @@
+.row {
+    animation: 1.8s ease-in-out 0s  slideInFromBottom;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    padding-top: 20px;
+    color: rgb(64,18,18);
+    width: 100%;
+    gap: 20px;
+
+    
+    .row2 {
+        h1 {
+            font-size: 5em;
+        }
+    }
+}
