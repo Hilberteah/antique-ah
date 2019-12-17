@@ -36,8 +36,8 @@ html {
 
 .page-container {
     width: 100vw;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     
 
 }
