@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Product from './product';
-import Title from './Title';
 import {ProductConsumer} from '../context'
 
 
