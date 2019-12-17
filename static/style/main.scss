@@ -11,7 +11,7 @@
 @import "./product-styles.scss";
 @import "./detail-styles.scss";
 @import "./modal-styles.scss";
-@import "./common-styles.scss";
+@import "./-styles.scss";
 
 html {
     font-size: 62.5%; // 1rem is 10px
@@ -36,8 +36,13 @@ html {
 
 .page-container {
     width: 100vw;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    display: flex;
+    justify-content: center;
     
 
+}
+
+.pl-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
