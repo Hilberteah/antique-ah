@@ -11,6 +11,7 @@
 @import "./product-styles.scss";
 @import "./detail-styles.scss";
 @import "./modal-styles.scss";
+@import "./common-styles.scss";
 
 html {
     font-size: 62.5%; // 1rem is 10px
@@ -25,16 +26,7 @@ html {
     font-family: 'montserrat';
 }
 
-body {
-    overflow-x: hidden;
-    font-weight: normal;
-    font-family: 'Bebas Neue', cursive;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
-    background-color: $yellowtan;
-}
+
 
 .app {
 
