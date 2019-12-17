@@ -71,7 +71,7 @@ export default class App extends Component {
               <Door/>
             </div>
             <div style={{opacity:this.state.display}} className='all-content'>
-            <div className='top-half'>
+            <div style={{backgroundColor:'$yellowtan'}}className='top-half'>
               <Header/>
               <Navbar/>
 
