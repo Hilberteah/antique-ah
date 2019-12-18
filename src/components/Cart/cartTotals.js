@@ -21,7 +21,9 @@ export default function CartTotals({value,history}) {
         } else {
           toast("Something went wrong", { type: "error" });
         }
+        clearCart()
       }
+    
     return(
         <div>
             <div className="cart-container">

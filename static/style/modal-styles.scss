@@ -1,8 +1,21 @@
-.modal-title {
-    display: flex;
-    justify-content: center;
-}
+.modal-column {
+    border-radius:10px;
+    .modal-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
 
+        h1{
+            font-family: $font;
+            font-size: 4.5em;
+        }
+    }
+    img {
+        width: 20vw;
+    }
+    
+}
 .modal-data {
     h5{
         font-size: 3em;
@@ -12,14 +25,20 @@
     padding-left: 10px;
 }
 
-.modal-btns {
+.btns-wrapper {
+    width: 100%;
     display: flex;
-    justify-content: space-around;
-    padding-bottom: 20px;
+    justify-content: center;
+    .modal-btns {
+        width: 70%;
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 20px;
+    }
 }
 
 .back-to-shop {
-    width: 100px;
+    width: 130px;
     height :50px;
 
     button {
@@ -35,7 +54,7 @@
     
 }
 .to-cart {
-    width: 100px;
+    width: 130px;
     height :50px;
 
     button {

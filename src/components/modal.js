@@ -24,12 +24,13 @@ export default class Modal extends Component {
                                     <div className='modal-title'>
                                         <h1>Item added to cart</h1>
                                     </div>
-                                    <img className='img-fluid' src={img}></img>
+                                    <img src={img}></img>
                                     <div className ='modal-data'>
                                         <h5>{title}</h5>
                                         <h5>price : $ {price}</h5>
                                     </div>
                                     
+                                    <div className='btns-wrapper'>
                                     <div className='modal-btns'>
                                         <div className='back-to-shop'>
                                             <Link to='/'>
@@ -41,6 +42,7 @@ export default class Modal extends Component {
                                                 <button onClick={()=>closeModal()}>Cart</button>
                                             </Link>
                                         </div>
+                                    </div>
                                     </div>
                                 </div>
                             </div>

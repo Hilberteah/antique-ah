@@ -28,8 +28,8 @@ export default class Product extends Component {
                  value.openModal(id)
                 }}
                 >
-                <div className='cart-icon'>
-                  {inCart ? <p disabled>in cart</p> : <p className='cart-icon-1'><FontAwesomeIcon  icon="cart-plus"/></p>}
+                <div className='cart-icon' disabled style={{color:'rgb(64,18,18)'}}>
+                  {inCart ? <p disabled>In Cart</p> : <p className='cart-icon-1'><FontAwesomeIcon  icon="cart-plus"/></p>}
                 </div>
               </button>
             </div>
