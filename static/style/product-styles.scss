@@ -7,8 +7,12 @@
   .cardy {
     background: white;
     .img-container {
-      
       overflow: hidden;
+      img {
+        height: 200px;
+        background-size: cover;
+
+      }
     }
 
     
@@ -42,11 +46,10 @@
         display: flex;
         justify-content: flex-end;
         .cartbtn {
-        width: 20%;
+        width: 100%;
         background-color:$bluegrey ;
         outline: none;
         border: none;
-        border-top-left-radius: 10px;
         transition: 0.5s ease-in-out;
 
         bottom: 0;
@@ -54,8 +57,10 @@
         padding: 0.2rem 0.4rem;
         // transform:translate(100%, 100%);
         &:hover {
-          background-color: $yellowtan;
+          background-color: rgb(73, 17, 17);
+          
         }
+
         .cart-icon {
           width: 100%;
           outline: none;
@@ -63,6 +68,10 @@
             font-size: 2em;
             margin-bottom: 0px !important;
             color: $rust;
+            transition: 0.5s ease-in-out;
+            &:hover{
+              color: $bluegrey;
+            }
           }
 
       }
