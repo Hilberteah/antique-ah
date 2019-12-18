@@ -86,7 +86,7 @@ export default class App extends Component {
                 <Route path="/details" component={Details}/>
               </div>
             </Switch>
-            {/* <Footer/> */}
+            <Footer/>
 
             </div>
           </div>

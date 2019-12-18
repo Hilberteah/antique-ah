@@ -13,7 +13,7 @@ class ProductProvider extends Component {
     state = {
       products: [] ,
       detailProduct: detailProduct,
-      cart: [],
+      cart: [storeProducts[1]],
       modalOpen: false,
       modalProduct: detailProduct,
       cartSubtotal: 0,
@@ -147,13 +147,10 @@ class ProductProvider extends Component {
     addTotals = ()=>{
         let subTotal=0;
         this.state.cart.map(item =>(subTotal += item.total));
-        const tempTax = subTotal * 0.1;
-        const tax = parseFloat(tempTax.toFixed(2));
-        const total = subTotal + tax;
+        const total = subTotal 
         this.setState(()=>{
             return{
                 cartSubtotal:subTotal,
-                cartTax:tax,
                 cartTotal:total
             }
         })

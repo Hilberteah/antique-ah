@@ -71,3 +71,74 @@
             
         }
     }
+
+
+    .cart-row   {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .checkout {
+           button {
+
+                background: none !important;
+
+                span {
+                    background-image: none !important;
+                    outline: none !important;
+                    border: none !important;
+                    background-color:rgb(0,133,67) !important ;
+                    width: 300px !important;
+                    height: 100px  !important;
+                    padding: 0px !important;
+                    display: flex !important;
+                    justify-content: center !important;
+                    align-items: center !important;
+                    font-size: 3em !important;
+                }
+            }
+        }
+        .clear{
+                width: 300px;
+                height: 100px;
+                font-size: 6em;
+                font-family: $font;
+                color: $rust;
+                background-color: rgb(109, 109, 109);
+                border-top-right-radius: 20px;
+                border-top-left-radius: 20px;
+                transition: 0.5s;
+                outline: none;
+                border: none;
+                &:hover {
+                    background-color:rgb(73, 17, 17) ;
+                    color: $bluegrey;
+                }
+                &:focus {
+                    outline: none;
+                }
+            .StripeCheckoutn {
+                width: 300px !important;
+            }
+
+        }
+        .data-cart{
+            background-color:$bluegrey;
+            width: 300px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            padding-bottom: 30px;
+            border-bottom-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+
+            
+            h5 {
+                font-size: 3em;
+                font-family: $font;
+            }
+
+        }
+    }

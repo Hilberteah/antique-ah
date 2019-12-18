@@ -25,21 +25,27 @@ export default function CartTotals({value,history}) {
     return(
         <div>
             <div className="cart-container">
-                <div style={{paddingLeft:'30px',fontSize:'20px'}} className="cart-row">
+                <div className='all'>
+                <div className="cart-row">
                     <Link to='/'>
-                        <button onClick={()=>clearCart()}>Clear Cart</button>
+                        <button className='clear' onClick={()=>clearCart()}>Clear Cart</button>
                     </Link>
-                    <h5><span>Subtotal: </span>$ {cartSubtotal}</h5>
-                    <h5><span>Tax: </span>$ {cartTax}</h5>
-                    <h5><span>Total: </span>$ {cartTotal}</h5>
-                    {/* <PayPalButton total={cartTotal} clearCart={clearCart} history={history} /> */}
-                    <StripeCheckout
-                        stripeKey="pk_test_4TbuO6qAW2XPuce1Q6ywrGP200NrDZ2233"
+                    <div className='data-cart'>
+                      {/* <h5><span> </span>Subtotal:  ${cartSubtotal}</h5> */}
+                      {/* <h5><span> </span>Tax: ${cartTax}</h5> */}
+                      <h5><span> </span>Total: ${cartTotal}</h5>
+                      <div className='checkout'>
+                      <StripeCheckout
+                        stripeKey="pk_test_Sq2fwiJxMUoP5woF3nx9bUPt00gnXfnLDU"
                         token={handleToken}
                         amount={cartTotal * 100}
                         billingAddress
                         shippingAddress
-                    />
+                      />
+                      </div>
+                    </div>
+                    </div>
+                    {/* <PayPalButton total={cartTotal} clearCart={clearCart} history={history} /> */}
                     
 
                     
