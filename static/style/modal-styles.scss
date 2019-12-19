@@ -50,6 +50,11 @@
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 1px;
         border: none;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            background-color: $bluegrey;
+            color: $rust;
+        }
     }
     
 }
@@ -66,5 +71,10 @@
         font-family: 'Bebas Neue', cursive;
         letter-spacing: 1px;
         border: none;
+        transition: 0.5s ease-in-out;
+        &:hover {
+            background-color: $rust;
+            color: $bluegrey;
+        }
     }
 }
